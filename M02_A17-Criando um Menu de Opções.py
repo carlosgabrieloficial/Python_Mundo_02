@@ -1,10 +1,12 @@
+from time import sleep
 
+n1 = int(input("Digite um numero : "))
+print('==='*20)
+n2 = int(input("Digite outro numero: "))
 
-n1 = int(input("Digite um numero :"))
-n2 = int(input("Digite outro numero:"))
 opcao = 0
-
 while opcao != 5:
+
     print("""
     [1] Somar
     [2] Multiplicar
@@ -12,11 +14,13 @@ while opcao != 5:
     [4] Novos numeros       
     [5] Sair do Programa               
 """)
-    opcao = str(input("Escolha uma opcao : "))
-    if opcao == 1:
-        print('[1] Somar escolhida' \
-        f'numero 1 {n1} + numero 2 {n2}' \
-        f'a soma é {n1+n2}')
+    
+    opcao = int(input("Escolha uma opcao : "))
+
+    if opcao == 1 :
+        print('Somar' \
+        f' {n1} + {n2}' \
+        f' a soma é : {n1+n2}')
 
     elif opcao == 2 :
         print('[2] Multiplicar escolhida' \
@@ -40,7 +44,6 @@ while opcao != 5:
         print('finalizando')
     else:
         print('Opção invalida, Tente novamente')
-        
-
-
+    print("==="*20)
+    sleep(2)
 print('fim do programa')

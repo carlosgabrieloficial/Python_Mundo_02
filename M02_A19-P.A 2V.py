@@ -1,12 +1,14 @@
 primeiro = int(input("Por favor diga um numero : "))
 razao = int(input("Qual a razão : "))
-contador = 0
+contador = 1
 termo = primeiro
 
-print(f"O primeiro termo é")
+print("O primeiro termo é")
 
-while contador <= 9:
-    print(f"{termo}->", end=' ')
+while contador <= 10:
+    print(f"{termo} --> ", end='')
     termo += razao
     contador += 1  
+
+print("FIM DO PROGRAMA")
 

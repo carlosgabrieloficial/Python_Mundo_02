@@ -1,0 +1,28 @@
+print("-"*20)
+print("Mercado")
+print("-"*20)
+
+total = totmil = menor = contador = 0 
+
+while True :
+
+    produto = str(input("Nome do produto :"))
+    preco = float(input("Qual o do produto"))
+    contador += 1
+    total += preco
+
+    if preco >= 1000:
+        totmil += 1
+    
+    if contador == 1:
+        menor = preco
+    else:
+        if preco < menor:
+            menor = preco
+    
+    resposta = " "
+    while resposta not in "M/F":
+        resposta = str(input("Quer continuar [N/S]")).strip().upper()[0]
+    if resposta == "N":
+        break
+    
